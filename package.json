@@ -1,0 +1,20 @@
+{
+  "name": "google-feed-api-wrapper",
+  "description": "API wrapper for using google feed api",
+  "author": {
+    "name": "Chirag Sanghvi",
+    "email": "csanghvi@appacitive.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chiragsanghvi/JavascriptSDK.git"
+  },
+  "readmeFilename": "README.md",
+  "engines": [
+    "node >= 0.8.16"
+  ],
+  "dependencies": {
+    "node-simple-router": "x",
+    "request": "x" 
+  }
+}
