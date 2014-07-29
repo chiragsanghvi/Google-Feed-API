@@ -10,8 +10,11 @@ var router = Router({ logging: false });
 
 // Route for get connections
 router.get('/', function (req, res) {
+ 	
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization, Content-Length, X-Requested-With');
  
-
   // Create a domain for exception handling
   var domain = require('domain').create();
 
@@ -42,7 +45,7 @@ router.get('/', function (req, res) {
 	  		}
 	  });
   });
-  
+
 });
 
 // Start an HTTP Server for logs with router
